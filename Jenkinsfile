@@ -3,14 +3,14 @@ pipeline {
     	stages {     	 
     	stage("Compile") {   
             	steps { 
-			withMaven {
+			withMaven(my_maven) {
                 		sh "mvn compile"          	 
 			}
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
         	steps {   
-			withMaven {
+			withMaven(my_maven) {
                 		sh "mvn test"          	 
 			}
             	}     	 
