@@ -7,6 +7,7 @@ pipeline {
 			sh "export M2_HOME=/usr/local/apache-maven"
                         sh "export MAVEN_HOME=/usr/local/apache-maven"
                         sh "export PATH=${M2_HOME}/bin:${PATH}"
+			sh "echo $PATH"
                 	sh "mvn compile"          	 
             	}     	 
         	}     	 
