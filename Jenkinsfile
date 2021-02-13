@@ -8,7 +8,7 @@ pipeline {
                         sh "export MAVEN_HOME=/usr/local/apache-maven"
                         sh "export PATH=/usr/local/apache-maven/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
 			sh "echo $PATH"
-                	sh "mvn compile"          	 
+                	sh "/usr/local/apache-maven/bin/mvn compile"          	 
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
