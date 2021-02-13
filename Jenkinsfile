@@ -5,7 +5,7 @@ pipeline {
             	steps { 
 			withMaven {
                 		sh "mvn compile"          	 
-			?
+			}
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
