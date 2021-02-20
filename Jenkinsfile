@@ -3,6 +3,7 @@ pipeline {
     	stages {     	 
     	stage("Compile") {   
             	steps { 
+			sh "echo $PATH"
                 	sh "/usr/local/apache-maven/bin/mvn compile"          	 
             	}     	 
         	}     	 
