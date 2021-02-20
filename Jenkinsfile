@@ -3,12 +3,12 @@ pipeline {
     	stages {     	 
     	stage("Compile") {   
             	steps { 
-                	sh "mvn compile"          	 
+                	sh "/usr/local/apache-maven/bin/mvn compile"          	 
             	}     	 
         	}     	 
     	stage("Unit test") {          	 
         	steps {   
-               		sh "mvn test"          	 
+               		sh "/usr/local/apache-maven/bin/mvn test"          	 
             	}     	 
         	}	 
     	}
